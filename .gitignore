@@ -1,6 +1,11 @@
 *
 
-!.gitignore
-!./hypr/*
-!./.zshrc/*
-!./mako/*
+!*/
+
+!hypr/
+!hypr/**
+
+!.zshrc
+
+!mako/
+!mako/**
