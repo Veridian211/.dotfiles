@@ -9,3 +9,6 @@
 
 !mako/
 !mako/**
+
+!waybar/
+!waybar/**
