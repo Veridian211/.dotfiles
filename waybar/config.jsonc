@@ -8,30 +8,27 @@
     // Choose the order of the modules
     "modules-left": [
         "hyprland/workspaces",
-        "hyprland/submap",
-        "sway/scratchpad",
-        "custom/media"
+        "hyprland/submap"
+        // "sway/scratchpad"
+        // "custom/media"
     ],
-    "modules-center": [
-        "sway/window"
-    ],
+    //"modules-center": [
+        //"sway/window"
+    //],
     "modules-right": [
         "mpd",
-        "idle_inhibitor",
-        "pulseaudio",
-        "network",
-        "power-profiles-daemon",
+        // "idle_inhibitor",
+        // "pulseaudio",
+        // "network",
+        // "power-profiles-daemon",
+        "hyprland/language",
         "cpu",
         "memory",
-        "temperature",
-        "backlight",
-        "keyboard-state",
-        "sway/language",
-        "battery",
-        "battery#bat2",
-        "clock",
-        "tray",
-        "custom/power"
+        // "temperature",
+        //"backlight", 
+        "clock"
+        // "tray",
+        // "custom/power"
     ],
     // Modules configuration
     // "hyprland/workspaces": {
@@ -49,15 +46,11 @@
     //         "focused": "",
     //         "default": ""
     //     }
-    // },
-    "keyboard-state": {
-        "numlock": true,
-        "capslock": true,
-        "format": "{name} {icon}",
-        "format-icons": {
-            "locked": "",
-            "unlocked": ""
-        }
+    // }
+    "hyprland/language": {
+        "format": "{}",
+        "format-en": "US",
+        "format-de": "DE",
     },
     "hyprland/submap": {
         "format": "<span style=\"italic\">{}</span>"
@@ -134,24 +127,6 @@
         // "device": "acpi_video1",
         "format": "{percent}% {icon}",
         "format-icons": ["", "", "", "", "", "", "", "", ""]
-    },
-    "battery": {
-        "states": {
-            // "good": 95,
-            "warning": 30,
-            "critical": 15
-        },
-        "format": "{capacity}% {icon}",
-        "format-full": "{capacity}% {icon}",
-        "format-charging": "{capacity}% ",
-        "format-plugged": "{capacity}% ",
-        "format-alt": "{time} {icon}",
-        // "format-good": "", // An empty format will hide the module
-        // "format-full": "",
-        "format-icons": ["", "", "", "", ""]
-    },
-    "battery#bat2": {
-        "bat": "BAT2"
     },
     "power-profiles-daemon": {
       "format": "{icon}",
